@@ -27,23 +27,23 @@ import modelo.Jefe;
 
 public class VentanaVisualizarEmpleados extends JFrame {
 
-	static final DateTimeFormatter FMT = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	public static final DateTimeFormatter FMT = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
 	// Filtros
-	JCheckBox chkContabilidad, chkRRHH, chkInformatica, chkVentas;
-	JCheckBox chkJefes, chkEmpleados;
-	JButton btnAplicarFiltros, btnLimpiarFiltros;
+	public JCheckBox chkContabilidad, chkRRHH, chkInformatica, chkVentas;
+	public JCheckBox chkJefes, chkEmpleados;
+	public JButton btnAplicarFiltros, btnLimpiarFiltros;
 
 	// Datos
-	JTextField txtNombre, txtSueldo, txtFechaContrato, txtDepartamento, txtIncentivo;
-	JRadioButton rbEmpleado, rbJefe;
+	public JTextField txtNombre, txtSueldo, txtFechaContrato, txtDepartamento, txtIncentivo;
+	public JRadioButton rbEmpleado, rbJefe;
 
 	// Gestión
-	JButton btnAnadir, btnBorrar, btnModificar;
+	public JButton btnAnadir, btnBorrar, btnModificar;
 
 	// Navegación
-	JButton btnPrimero, btnAnterior, btnSiguiente, btnUltimo;
-	JLabel lblPosicion;
+	public JButton btnPrimero, btnAnterior, btnSiguiente, btnUltimo;
+	public JLabel lblPosicion;
 
 	public VentanaVisualizarEmpleados() {
 		setTitle("Visualizar empleados");
